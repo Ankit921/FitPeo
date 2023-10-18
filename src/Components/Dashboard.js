@@ -6,13 +6,13 @@ import TableSale from "./TableSale";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col md:grid-cols-2 gap-4 pl-9 pr-9">
+    <div className="flex flex-col gap-4 pl-9 pr-9 sm:pr-1">
       <DadhboardStatsGrid />
-      <div className="flex gap-4">
+      <div className="flex flex-row gap-4 w-full sm:w-3/4 lg:w-full">
         <BarGraph />
         <SalesPieChart />
       </div>
-      <div className="flex flex-row gap-4 w-full">
+      <div className="flex flex-row gap-4 w-full ">
         <TableSale />
       </div>
     </div>

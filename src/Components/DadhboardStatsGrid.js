@@ -3,11 +3,12 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { RiMoneyPoundBoxFill } from "react-icons/ri";
 import { BsFillBagCheckFill } from "react-icons/bs";
 import { FaBalanceScaleLeft } from "react-icons/fa";
+
 export default function DadhboardStatsGrid() {
   return (
-    <div className="flex gap-4 h-48">
+    <div className="flex gap-4 w-full h-48 ">
       <BoxWrapper>
-        <div className="rounded-full h-28 w-28 flex items-center justify-center bg-green-300">
+        <div className="rounded-full sm:w-2/3 h-28 w-28 flex items-center justify-center bg-green-300">
           <RiMoneyPoundBoxFill className="text-2xl text-white" />
         </div>
         <div className="pl-2">
@@ -18,13 +19,13 @@ export default function DadhboardStatsGrid() {
             </strong>
           </div>
           <div className="flex items-center">
-            <span className="text-sm text-green-500 ">37.8%</span>
+            <span className="text-sm text-green-500 ">2%</span>
             <h5 className=" text-sm">This Month</h5>
           </div>
         </div>
       </BoxWrapper>
       <BoxWrapper>
-        <div className="rounded-full h-28 w-28 flex items-center justify-center bg-violet-400">
+        <div className="rounded-full sm:w-2/3 h-28 w-28 flex items-center justify-center bg-violet-400">
           <IoDocumentTextOutline className="text-2xl text-white" />
         </div>
         <div className="pl-2">
@@ -35,13 +36,13 @@ export default function DadhboardStatsGrid() {
             </strong>
           </div>
           <div className="flex items-center">
-            <span className="text-sm text-red-500 ">2%</span>
+            <span className="text-sm text-violet-500 ">2%</span>
             <h5 className=" text-sm">This Month</h5>
           </div>
         </div>
       </BoxWrapper>
       <BoxWrapper>
-        <div className="rounded-full h-28 w-28 flex items-center justify-center bg-blue-400">
+        <div className="rounded-full sm:w-2/3 h-28 w-28 flex items-center justify-center bg-blue-400">
           <FaBalanceScaleLeft className="text-2xl text-white" />
         </div>
         <div className="pl-2">
@@ -58,7 +59,7 @@ export default function DadhboardStatsGrid() {
         </div>
       </BoxWrapper>
       <BoxWrapper>
-        <div className="rounded-full h-28 w-28 flex items-center justify-center bg-red-400">
+        <div className="rounded-full sm:w-2/3  h-28 w-28 flex items-center justify-center bg-red-400">
           <BsFillBagCheckFill className="text-2xl text-white" />
         </div>
         <div className="pl-2">
@@ -80,7 +81,7 @@ export default function DadhboardStatsGrid() {
 
 function BoxWrapper({ children }) {
   return (
-    <div className="bg-white rounded-lg pl-4 pr-2 flex-1  border border-gray-200 flex items-center ">
+    <div className="bg-white rounded-lg pl-4 pr-2 flex-1 border border-gray-200 flex items-center ">
       {children}
     </div>
   );

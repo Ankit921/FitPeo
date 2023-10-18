@@ -641,16 +641,12 @@ a:hover{
   top: 50%;
 }
 
-.mt-3{
-  margin-top: 0.75rem;
-}
-
 .mr-6{
   margin-right: 1.5rem;
 }
 
-.mr-10{
-  margin-right: 2.5rem;
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .block{
@@ -663,6 +659,10 @@ a:hover{
 
 .table{
   display: table;
+}
+
+.h-10{
+  height: 2.5rem;
 }
 
 .h-16{
@@ -685,16 +685,16 @@ a:hover{
   height: 100vh;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
 .min-h-0{
   min-height: 0px;
 }
 
 .w-28{
   width: 7rem;
+}
+
+.w-32{
+  width: 8rem;
 }
 
 .w-\[14rem\]{
@@ -713,10 +713,6 @@ a:hover{
   width: 100vw;
 }
 
-.w-32{
-  width: 8rem;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
@@ -733,6 +729,10 @@ a:hover{
 
 .flex-col{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -765,6 +765,10 @@ a:hover{
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
 }
 
 .rounded-full{
@@ -922,6 +926,10 @@ a:hover{
   padding-top: 0.75rem;
 }
 
+.pr-4{
+  padding-right: 1rem;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1037,23 +1045,30 @@ a:hover{
     height: 3rem;
   }
 
+  .sm\:w-28{
+    width: 7rem;
+  }
+
   .sm\:w-48{
     width: 12rem;
+  }
+
+  .sm\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
+  .sm\:pr-72{
+    padding-right: 18rem;
   }
 }
 
 @media (min-width: 768px){
-  .md\:grid{
-    display: grid;
+  .md\:flex-row{
+    flex-direction: row;
   }
 
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:pr-12{
+    padding-right: 3rem;
   }
 }
 
-@media (min-width: 1280px){
-  .xl\:mr-32{
-    margin-right: 8rem;
-  }
-}
